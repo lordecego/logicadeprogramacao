@@ -92,3 +92,15 @@ function recebeMes (mes){
 
 console.log(recebeMes(2))
 console.log(recebeMes(7))
+
+
+
+//5 – Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo.
+
+function maiorque(valor1,valor2){
+
+    return valor1 >= valor2
+}
+
+console.log(maiorque(2,3))
+console.log(maiorque(4,4))
