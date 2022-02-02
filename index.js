@@ -27,7 +27,7 @@ calculadora(2,4)
 
 function numerointeiro(numero){
 
-    if(numero %3==0){
+    if(numero %3 ===0){
         return true
     }
     else{
@@ -38,3 +38,57 @@ function numerointeiro(numero){
 console.log(numerointeiro(3))
 console.log(numerointeiro(9))
 console.log(numerointeiro(10))
+
+
+//4 – Crie uma função que recebe um número (de 1 a 12) e retorne o mês correspondente como uma string. 
+//Por exemplo, se a entrada for 2, a função deverá retornar “fevereiro”, pois este é o 2° mês.
+
+
+function recebeMes (mes){
+    switch(mes){
+        case 1: 
+        return "Janeiro"
+        break;
+
+        case 2:
+            return "Fevereiro"
+            break;
+
+        case 3: 
+        return "Março"
+        break; 
+
+        case 4:
+        return "Abril"
+        
+        case 6:
+        return "Junho"
+
+        case 7:
+        return "Julho"
+
+        case 8:
+        return "Agosto"
+
+        case 9:
+        return "Setembro"
+
+        case 10:
+        return "Outubro"
+
+        case 11:
+            return "Novembro"
+
+        case 12:
+        return "Dezembro"
+
+
+        default:
+            return "Não reconhecemos esse mês"
+           
+    }
+
+}
+
+console.log(recebeMes(2))
+console.log(recebeMes(7))
