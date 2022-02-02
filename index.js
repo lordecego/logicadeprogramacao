@@ -21,3 +21,20 @@ function calculadora(valor1,valor2){
 }
 
 calculadora(2,4)
+
+
+//3 – Crie uma função que verifica se um número inteiro passado como parâmetro é divisível por 3 e retorne true ou false.
+
+function numerointeiro(numero){
+
+    if(numero %3==0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(numerointeiro(3))
+console.log(numerointeiro(9))
+console.log(numerointeiro(10))
