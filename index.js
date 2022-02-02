@@ -104,3 +104,80 @@ function maiorque(valor1,valor2){
 
 console.log(maiorque(2,3))
 console.log(maiorque(4,4))
+
+
+//6 - Usando a função map, crie um novo array a partir do array carrinho com o elemento JSON, apenas com os preços dos produtos. Exemplo: [ 3.45, 13.9, 41.22, 7.5 ]
+
+
+const pessoa= {
+    altura:150 ,
+    peso: 72 ,
+    nome: "Jubilinho",
+
+}
+
+const listaDePessoas=[
+    {
+        altura:150 ,
+        peso: 72 ,
+        nome: "Jubilinho",
+    
+    },
+
+    {
+        altura:158 ,
+        peso: 79 ,
+        nome: "magalhaes",
+    
+    },
+
+    {
+        altura:180 ,
+        peso: 90 ,
+        nome: "carlos",
+    
+    },
+
+    {
+        altura:105 ,
+        peso: 100 ,
+        nome: "antonio",
+    
+    }
+
+    
+]
+
+console.log(listaDePessoas)
+
+const teste=listaDePessoas.map(pessoas=>{
+    return {nome:pessoas.nome, altura:pessoas.altura}
+})
+console.log(teste)
+
+
+
+const carrinho=[
+    {
+        nomeProduto:"laranja",
+        preço: 3.6
+    },
+    {
+        nomeProduto:"cenoura",
+        preço: 9.4
+    },
+    {
+        nomeProduto:"pimentão",
+        preço: 7.6
+    },
+    {
+        nomeProduto:"peixe",
+        preço: 4.5
+    },
+    
+]
+
+//.map acessa os bag dentro
+const preçosProdutos=carrinho.map(preçosProd=>preçosProd.preço)
+console.log(preçosProdutos)
+    
