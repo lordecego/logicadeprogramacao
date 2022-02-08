@@ -109,6 +109,7 @@ console.log(maiorque(4,4))
 //6 - Usando a função map, crie um novo array a partir do array carrinho com o elemento JSON, apenas com os preços dos produtos. Exemplo: [ 3.45, 13.9, 41.22, 7.5 ]
 
 
+
 const pessoa= {
     altura:150 ,
     peso: 72 ,
