@@ -9,6 +9,16 @@ function retornaFuncao(text){
 
 console.log(retornaFuncao())
 
+// ou...
+
+function cumprimentar(nome){
+    
+    olá="Olá, "
+    return olá + nome+"!"
+
+}
+console.log(cumprimentar("Marilda"))
+
 
 //Escreva uma função que receba a idade de uma pessoa em anos e retorne a mesma idade em dias
 
@@ -112,3 +122,7 @@ function inverso(valor){
 console.log(inverso(true))
 console.log(inverso(6))
 console.log(inverso("2000"))
+
+
+
+
