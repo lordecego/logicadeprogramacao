@@ -142,3 +142,16 @@ function recebeParametros(numero, minimo, maximo, inclusivo=false){
 console.log(recebeParametros(10,100,50))
 
 
+/*Desenvolva uma função que recebe dois números inteiros não negativos (maiores ou iguais a zero) e realize a
+multiplicação deles. Porém, não utilize o operador de mutiplicação.*/
+
+
+function multipli(numero1, numero2){
+    let total=0
+    for(let i=0; i<numero2; i++)
+    total+=numero1
+    return total
+}
+// Pelo que eu entendi, o total passou a ser 3, devido a total=0+numero1(total+=numero1), esse loop vai ser incrementado 9 vezes, ou seja,
+// o numero 3 vai somar 9 vezes, ta ai a multiplicação
+console.log(multipli(3,9))
