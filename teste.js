@@ -155,3 +155,35 @@ function multipli(numero1, numero2){
 // Pelo que eu entendi, o total passou a ser 3, devido a total=0+numero1(total+=numero1), esse loop vai ser incrementado 9 vezes, ou seja,
 // o numero 3 vai somar 9 vezes, ta ai a multiplicação
 console.log(multipli(3,9))
+
+
+
+/*Escreva uma função que receba dois parâmetros. O primeiro parâmetro é o elemento que repetirá, enquanto
+que o segundo será o número de vezes que haverá repetição. Um array será retornado.*/
+
+
+function repetir(item, quantidade){
+    let resultado=[]
+    for(let i = 0; i<quantidade; i++)
+    resultado.push(item)
+    return resultado
+}
+
+console.log(repetir("Xidori",2))
+
+
+//Elabore uma função que recebe um número como parâmetro e retorne uma string com o símbolo "+" na
+//quantidade especificada no parâmetro.
+
+function recebeNumero(numeroR){
+    totali=''
+    for(let i=0; i<numeroR; i++)
+    totali+='+'
+    return totali
+}
+
+console.log(recebeNumero(5))
+
+
+/*Crie uma função que receba uma array e retorne o primeiro e o último elemento desse array como um novo
+array:*/ 
